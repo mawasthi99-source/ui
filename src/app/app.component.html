@@ -1,0 +1,17 @@
+<!-- <button (click)="start()">Start VAD</button>
+    <button (click)="stop()">Stop VAD</button> -->
+
+
+
+<div class="controls">
+  <button (click)="start()">Start Recording</button>
+  <button (click)="stop()">Stop Recording</button>
+</div>
+
+<div class="clips">
+  <h3>Recorded Clips</h3>
+  <div *ngFor="let clip of clips; let i = index" class="clip">
+    <p>Clip {{ i + 1 }} ({{ clip.duration | number:'1.1-1' }}s)</p>
+    <audio [src]="clip.url" controls></audio>
+  </div>
+</div>
