@@ -5,7 +5,7 @@ interface AudioClip {
   url: string;
   duration: number;
 }
-
+//app component.ts
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
