@@ -6,6 +6,7 @@ interface AudioClip {
   duration: number;
 }
 //app component.ts
+//new branch
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
